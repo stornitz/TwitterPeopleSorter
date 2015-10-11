@@ -1,0 +1,15 @@
+{
+  "name": "TwitterPeopleSorter",
+  "version": "1.0.0",
+  "description": "Trouvez les gens qui vous suivent ou que vous suivez avec des critères réglables comme bon vous le semble !",
+  "main": "TwitterPeopleSorter.js",
+  "dependencies": {
+    "twit": "^1.1.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stornitz",
+  "license": "ISC"
+}
