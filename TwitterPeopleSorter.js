@@ -125,7 +125,7 @@ function analyzeUsers(users) {
 			console.log('not_enough_tweets')
 		}
 		// Dernier tweet trop vieux (ou inexistant)
-		if(~settings.last_tweet && (!('status' in user) || new Date(user.status.created_at).getTime() > (new Date().getTime() - settings.last_tweet*1000))) {
+		if(~settings.last_tweet && (!('status' in user) || new Date(user.status.created_at).getTime() < (new Date().getTime() - settings.last_tweet*1000))) {
 			score += scores.last_tweet_too_old;
 			console.log('last_tweet_too_old')
 		}
